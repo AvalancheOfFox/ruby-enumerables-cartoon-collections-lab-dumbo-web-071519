@@ -13,6 +13,6 @@ end
 
 cheese_types = ["cheddar", "gouda", "camembert"]
 def find_the_cheese(searchArray)
-  searchArray.find {|cheese| cheese_types.include?(cheese)}
-  
+  inCheeseArr = cheese_types
+  searchArray.find {|cheese|inCheeseArr.include?(cheese)}
 end
